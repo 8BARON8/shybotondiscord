@@ -34,7 +34,7 @@ bot.on('message', async message => {
 })
 
 
-bot.login(config.token)
+bot.login(process.env.token)
 bot.on('ready', () => {
     console.log(`${bot.user.username} online`);
     bot.user.setPresence({status: 'dnd', game:{name: 'UFC💜', type: 3}})
