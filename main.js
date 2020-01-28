@@ -22,7 +22,7 @@ fs.readdir('./commands', (err, files) => { // чтение файлов в па�
 
 
 bot.on('message', async message => {
-    let prefix = config.prefix
+    let prefix = '!'
     let messageArray = message.content.split(' ') // разделение пробелами
     let command = messageArray[0] // команда после префикса
     let args = messageArray.slice(1) // аргументы после команды
